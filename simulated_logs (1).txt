@@ -1,0 +1,36 @@
+Based on the provided log data and NIST guidelines, I will create two tables: Non-Compliant Logs Table and Compliant Logs Table.
+
+**Non-Compliant Logs Table**
+
+| Log Line | Rules Violated | Description of Violation | Severity of Risk |
+| --- | --- | --- | --- |
+| {timestamp: 02/22/2025 03:35:05, event_type: sys, message: Unhandled excepton., compliance: non-compliant} | AC-2, AU-2, SC-12 | Missing UserID and EventType fields, unencrypted communication | High |
+| {timestamp: 02/22/2025 03:35:05, host: node6, event_type: audit, severity: warn, message: Netwrk error occured., compliance: non-compliant, noise: Unexpected value 874} | AU-2, AU-6 | Missing Timestamp field, unexpected noise value | Medium |
+| {timestamp: 02/22/2025 03:35:05, host: node10, event: error, message: Cfg change pending., compliance: non-compliant, noise: Unexpected value 737} | AU-2, AU-6 | Missing Timestamp field, unexpected noise value | Medium |
+| {timestamp: 02/22/2025 03:35:05, host: node9, event_type: sys, severity: err, message: Netwrk error occured., compliance: non-compliant} | AC-2, AU-2, SC-12 | Missing UserID and EventType fields, unencrypted communication | High |
+| {timestamp: 02/22/2025 03:35:05, event: network, message: Usr loged in succsfully., compliance: non-compliant} | AC-2, AU-2, SC-12 | Missing UserID and EventType fields, unencrypted communication | High |
+| {event_type: error, severity: low, message: Cfg change pending., compliance: non-compliant, noise: Unexpected value 489} | AU-2, AU-6 | Missing Timestamp field, unexpected noise value | Medium |
+| {event: network, severity: info, message: Unhandled excepton., compliance: non-compliant} | AC-2, AU-2, SC-12 | Missing UserID and EventType fields, unencrypted communication | High |
+| {timestamp: 02/22/2025 03:35:05, host: node6, event_type: access, message: Usr loged in succsfully., compliance: non-compliant} | AC-2, AU-2, SC-12 | Missing UserID and EventType fields, unencrypted communication | High |
+| {event: audit, severity: critical, message: Netwrk error occured., compliance: non-compliant, noise: Unexpected value 120} | AU-2, AU-6 | Missing Timestamp field, unexpected noise value | Medium |
+| {event_type: network, message: Usr loged in succsfully., compliance: non-compliant, noise: Unexpected value 329} | AU-2, AU-6 | Missing Timestamp field, unexpected noise value | Medium |
+| {host: node3, event: sys, message: Unhandled excepton., compliance: non-compliant} | AC-2, AU-2, SC-12 | Missing UserID and EventType fields, unencrypted communication | High |
+| {timestamp: 02/22/2025 03:35:05, host: node9, event_type: sys, severity: warn, message: Netwrk error occured., compliance: non-compliant} | AC-2, AU-2, SC-12 | Missing UserID and EventType fields, unencrypted communication | High |
+| {host: node8, event: audit, message: Sys reboot initaited., compliance: non-compliant} | AC-2, AU-2, SC-12 | Missing UserID and EventType fields, unencrypted communication | High |
+| {timestamp: 02/22/2025 03:35:05, host: node6, event_type: access, message: Usr loged in succsfully., compliance: non-compliant} | AC-2, AU-2, SC-12 | Missing UserID and EventType fields, unencrypted communication | High |
+
+**Compliant Logs Table**
+
+| Log Line |
+| --- |
+| {timestamp: 2025-02-22T03:35:05.372805Z, host: server3, event_type: system, severity: INFO, compliance: compliant, message: System reboot initiated.} |
+| {timestamp: 2025-02-22T03:35:05.372876Z, host: server8, event_type: audit, severity: ERROR, compliance: compliant, message: Policy update applied.} |
+| {timestamp: 2025-02-
+
+
+
+
+
+Source Document: [{"source": "simulated_logs.txt", "score": 0.87, "directory": "simulated_logs"}]
+
+</s>
