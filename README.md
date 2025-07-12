@@ -43,5 +43,4 @@ Two SecureGPT-powered AWS Lambda agents were developed:
 - Add multi-model support (hybrid AI agents)
 - Integrate learning loop for adaptive compliance updates
 
-## 🤝 Contributors
-- Cyber Sentinel Team – Sprint 1, Agent 1 & 2 Development
+
