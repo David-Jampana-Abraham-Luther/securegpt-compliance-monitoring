@@ -1,6 +1,3 @@
-# securegpt-compliance-monitoring
-An intelligent agent-based system that checks system logs for cybersecurity compliance based on NIST standards. It uses SecureGPT and AWS Lambda to detect violations, create service tickets, and store the results automatically.
-
 # SecureGPT Compliance Monitoring 🚀
 
 This project is part of a larger modular cybersecurity solution developed by the **Cyber Sentinel** team. It focuses on automated compliance monitoring of log datasets using SecureGPT, ensuring adherence to NIST standards such as:
